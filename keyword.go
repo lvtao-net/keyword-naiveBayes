@@ -63,7 +63,7 @@ func  (n  *NaiveBayes)  classify(text  string)  string  {
 		}   
 	}   
 	//  这是一个概率最小的词   
-	minority  :=  float64(math.Min(n.如数))   
+	minority  :=  float64(math.Min(n.keys))   
 	//  增加这个新增词到所有训练集中   
 	for  _,  text  :=  range  n.trainData  {   
 		for  word,  _  :=  range  text  {   
